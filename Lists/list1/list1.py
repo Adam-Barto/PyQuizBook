@@ -8,12 +8,13 @@ def create_list_from_tuple(t):
     This function takes a tuple of elements and returns a list containing those elements of the tuple.
     """
     return list(t)
-    
+
+
 def drop_last(lst):
     """
     This function takes a list and returns a list with the last item removed.
     """
-    return lst[:len(lst)-1]
+    return lst[:len(lst) - 1]
 
 
 def drop_first_two(lst):
@@ -22,11 +23,13 @@ def drop_first_two(lst):
     """
     return lst[2:]
 
+
 def drop_mangle(lst):
     """
     This function takes a list and returns a list with the first two items AND last item removed.
     """
     return drop_first_two(lst[:-1])
+
 
 def add_item_front(lst, a):
     """
@@ -35,12 +38,14 @@ def add_item_front(lst, a):
     """
     return [a] + lst
 
+
 def add_item_end(lst, a):
     """
     This function takes a list and an item,
     returning the list with the item appended to the list
     """
     return lst + [a]
+
 
 def add_list_to_list(lsta, lstb):
     """
@@ -49,17 +54,20 @@ def add_list_to_list(lsta, lstb):
     """
     return lsta + lstb
 
+
 def list_and_list_to_tuple(lsta, lstb):
     """
     This function takes two lists and returns a tuple containing the two lists
     """
     return lsta, lstb
 
+
 def list_and_list_to_list(lsta, lstb):
     """
     This function takes two lists and returns a list containing the two lists
     """
     return list((lsta, lstb))
+
 
 ##
 ##
@@ -71,23 +79,27 @@ def list_from_range(n):
     """
     return list(range(n))
 
+
 def list_from_range2(n, m):
     """
     This function returns list with n..m (without m) as integers in a list
     """
     return list(range(n, m))
 
+
 def list_from_range3(n, m):
     """
     This function returns list with n..m (including m(!)) as integers in a list
     """
-    return list(range(n,m+1))
+    return list(range(n, m + 1))
+
 
 def list_from_range4(n, m):
     """
     This function returns list with n..m (WITHOUT n and including m) as integers in a list
     """
-    return list(range(n+1,m+1))
+    return list(range(n + 1, m + 1))
+
 
 def list_from_range_by(n, step):
     """
@@ -96,13 +108,15 @@ def list_from_range_by(n, step):
     """
     return list(range(0, n, step))
 
+
 def rev_list(lst):
     """
     This function returns list which is a reverse of the argument list
     (read the test)
     """
     return lst[::-1]
-  
+
+
 def concat_list_indexwise(lst1, lst2):
     """
     Write a program to add two lists index-wise. 
@@ -112,18 +126,20 @@ def concat_list_indexwise(lst1, lst2):
     """
     return [l1 + l2 for l1, l2 in zip(lst1, lst2)]
 
+
 def square_each_item(lst):
     """
     This function returns list which each item in argument list has been squared
     (read the test)
     """
-    return [item*item for item in lst]
+    return [item * item for item in lst]
+
 
 def remove_empty_strs(lst):
-     """
+    """
      Remove empty strings from the list of strings
      """
-     return [s for s in lst if s != '']
+    return [s for s in lst if s != '']
 
 
 def remove_item_from(lst, aaa):
@@ -132,11 +148,13 @@ def remove_item_from(lst, aaa):
     """
     return [s for s in lst if s != aaa]
 
+
 def leave_item_in(lst, aaa):
     """
     Leave all occurrences of a specific item in a list.
     """
     return [s for s in lst if s == aaa]
+
 
 def length_of(lst):
     """
