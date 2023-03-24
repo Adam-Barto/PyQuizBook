@@ -33,8 +33,9 @@ def delete_keys_from_dict(datadict, keylist):
     """
     Delete a list of keys from a dictionary
     """
-    val = {datadict.pop(k) for k in keylist}
-    return datadict
+    return {i: datadict[i] for i in datadict if i not in keylist}
+    # lol = {datadict.pop(k) for k in keylist}
+    # return datadict
 
 
 def check_dict_for_key(datadict, key):
@@ -42,7 +43,8 @@ def check_dict_for_key(datadict, key):
     Check if a value exists in a dictionary
     (NO FOR loops!)
     """
-    return False if list(datadict.values()).count(key) == 0 else True
+    return key in datadict.values()
+    # return False if list(datadict.values()).count(key) == 0 else True
 
 
 def get_key_of_min_value(ddd):
