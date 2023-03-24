@@ -1,6 +1,5 @@
 import unittest
-from dict1 import dict1
-
+import dict1
 
 class Dict1Test(unittest.TestCase):
 
