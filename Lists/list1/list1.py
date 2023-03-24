@@ -14,7 +14,7 @@ def drop_last(lst):
     """
     This function takes a list and returns a list with the last item removed.
     """
-    return lst[:len(lst) - 1]
+    return lst[:-1]
 
 
 def drop_first_two(lst):
@@ -28,7 +28,7 @@ def drop_mangle(lst):
     """
     This function takes a list and returns a list with the first two items AND last item removed.
     """
-    return drop_first_two(lst[:-1])
+    return lst[2:-1]
 
 
 def add_item_front(lst, a):
