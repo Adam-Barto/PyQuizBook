@@ -66,7 +66,7 @@ def list_and_list_to_list(lsta, lstb):
     """
     This function takes two lists and returns a list containing the two lists
     """
-    return list((lsta, lstb))
+    return [lsta, lstb]
 
 
 ##
